@@ -27,6 +27,15 @@ $(document).keypress(function(){
         gameStarted=true;
     }
 });
+$(document).click(function(){
+    if(!gameStarted){
+        
+        // $("#level-title").text("Level "+level);
+        
+        nextSequence();
+        gameStarted=true;
+    }
+});
 
 
 function nextSequence(){
